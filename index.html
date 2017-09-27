@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="canvas" width="300" height="250" style="border:1px solid #000000;">
+
+</canvas>
+<script type="text/javascript">
+	var canvas = document.getElementById("canvas"),
+	ctx = canvas.getContext("2d");
+
+	canvas.width = 300;
+	canvas.height = 250;
+
+
+	var background = new Image();
+	background.src = "Assets/bg.jpg";
+
+	background.onload = function(){
+	    ctx.drawImage(background,0,0);   
+	}
+</script>
+</body>
+</html>

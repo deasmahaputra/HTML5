@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ margin:48px; background:#fff; font-family: Arial, Helvetica, sans-serif; }
+div#banner{
+    width: 300px;
+    height: 250px;
+    margin: 0px auto;
+    border: #000 1px solid;
+    overflow: hidden;
+}
+div#banner > #banner_backdrop{
+    position: relative;
+    background: url(assets/bg.jpg) repeat-x;
+    width: 1320px;
+    height: 250px;
+    animation: backdrop_roll 3s infinite;
+    -webkit-animation: backdrop_roll 3s infinite;
+    animation: backdrop_roll 3s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes backdrop_roll{
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+@keyframes backdrop_roll { 
+    from { 
+        right: 100px; 
+        } to { 
+        right: 340px; 
+        } 
+}
+div#banner > #banner_content{
+    position: relative;
+    width: 96%;
+    height: 160px;
+    margin: 20px auto;
+    top:-200px;
+    color:#FFF;
+    font-size:27px;
+}
+</style>
+</head>
+<body>
+  <div id="banner">
+    <div id="banner_backdrop"></div>
+    <div id="banner_content">
+      
+      <div class="text-first"></div>
+    </div>
+  </div>
+</body>
+</html>
