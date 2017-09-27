@@ -52,9 +52,20 @@ div#banner > #banner_content{
     height: 30px;
     margin-top: 30px;
 }
-
 #one{
-    
+    height: 30px;
+    width: 110px;
+    float: left;
+    margin-top: 100px;
+    background: -moz-linear-gradient(left, green 0, green 0%, transparent 0%); 
+    background: -webkit-linear-gradient(left, green 0, green 0%, transparent 0%);
+    background: -webkit-linear-gradient(left, green 0, green 0%, transparent 0%);
+}
+#two{
+    height: 30px;
+    width: 110px;
+    float: left;
+    margin-top: 100px;
 }
 
 
@@ -66,10 +77,18 @@ div#banner > #banner_content{
   <div id="banner">
     <div id="banner_backdrop"></div>
     <div id="banner_content">
+      <div class="bg-txt1"></div>
+      <div class = "bg-txt">
+        <img src="assets/txt01.png" id="one"/>
+        <img src="assets/txt01b.png" id="two"/>
+      </div>
 
-        <div class="bg-txt1">
-          <img src="assets/txt01.png" id="one"/>
-        </div>
+      <div class = "bg-txt2">
+        <img src="assets/txt02b.png" id="three"/>
+      </div>
+       <!--  <div class="bg-txt1">
+      
+        </div> -->
     </div>
   </div>
 
@@ -84,15 +103,36 @@ div#banner > #banner_content{
       // });
 
       $(document).ready(function(){
-            $("#one").hide().fadeIn(1500);  
+            $("#one").hide().fadeIn(1500);
+            $("#one").fadeOut(1800);  
       });
 
+      $(document).ready(function(){
+            $("#two").hide().fadeIn(1500);
+            $("#two").fadeOut(1800);
+      });
+
+       $(document).ready(function(){
+            $("#three").hide().fadeIn(1900);
+            $("#three").fadeOut(2100);  
+      });
 
       $(document).ready(function(){
             setTimeout(function(){
                 $(".bg-txt1").animate({width: "150px"});
             },1600);
       });
+
+      $(document).ready(function(){
+            setTimeout(function(){
+                $(".bg-txt1").animate({
+                  background: linear-gradient(left, blue 0, blue 100%, transparent 100%);
+                });
+            },1600);
+      });
+
+
+
     
 
 
