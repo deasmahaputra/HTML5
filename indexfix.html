@@ -35,6 +35,7 @@ div#banner > #banner_backdrop{
         right: 340px; 
         } 
 }
+
 div#banner > #banner_content{
     position: relative;
     width: 96%;
@@ -44,15 +45,57 @@ div#banner > #banner_content{
     color:#FFF;
     font-size:27px;
 }
+
+.bg-txt1{
+    background-color: blue;
+    width: 0px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+#one{
+    
+}
+
+
+
 </style>
 </head>
+
 <body>
   <div id="banner">
     <div id="banner_backdrop"></div>
     <div id="banner_content">
-      
-      <div class="text-first"></div>
+
+        <div class="bg-txt1">
+          <img src="assets/txt01.png" id="one"/>
+        </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script>
+
+      // $(document).ready(function(){
+      //       $("#one").hide().fadeIn(1500);
+
+            
+           
+      // });
+
+      $(document).ready(function(){
+            $("#one").hide().fadeIn(1500);  
+      });
+
+
+      $(document).ready(function(){
+            setTimeout(function(){
+                $(".bg-txt1").animate({width: "150px"});
+            },1600);
+      });
+    
+
+
+</script>
 </body>
 </html>
