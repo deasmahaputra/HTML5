@@ -1,20 +1,21 @@
+//---------------------------BOX ANNIMATION-------------------
 function init(){
     var tl = new TimelineLite();
-
-    tl.to('.banner-box', 5, {x:-340})
-      
+      tl.to('.banner-box', 5, {x:-340})  
     }
-    init();
-    
+init();
+
+//-----------------------SINGLE TEXT ANNIMATION----------------- 
 function text(){
    var tl = new TimelineLite();
-   tl.to('#txtone', 2, {opacity:1})
-     .to('#txtone', 0.2, {left:-150} ,"+=0.1")
-     .to('#strong', 1, {opacity:1})
-     .to('#strong', 0.2, {bottom:-300, delay:1})
+     tl.to('#txtone', 2, {opacity:1})
+       .to('#txtone', 0.2, {left:-150} ,"+=0.1")
+       .to('#strong', 1, {opacity:1})
+       .to('#strong', 0.2, {bottom:-300, delay:1})
 }
 text();
 
+//------------------------------TEXT ANNIMATION-------------------
 function text1b(){
   var tl = new TimelineLite();
    tl.to('#txttwo', 2, {opacity:1})
@@ -32,11 +33,12 @@ function text1b(){
 }
 text1b();
 
+//----------------------------BOX ANNIMATION-----------------------------------------------
 function box(){
   var tl = new TimelineLite();
-  tl.to('.box', 1, {width:140})
-    .to('.box', 2, {left:-150})
-    .to('.boxtwo', 0.2,{width:120})
-    .to('.boxtwo', 0.2,{opacity:0,delay:1})
+    tl.to('.box', 1, {width:140})
+      .to('.box', 2, {left:-150})
+      .to('.boxtwo', 0.2,{width:120})
+      .to('.boxtwo', 0.2,{opacity:0,delay:1})
 }
 box();
