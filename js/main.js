@@ -39,6 +39,6 @@ function box(){
     tl.to('.box', 1, {width:135})
       .to('.box', 0.5, {left:-150, delay:1})
       .to('.boxtwo', 0.2,{width:120, delay:1})
-      .to('.boxtwo', 0.2,{opacity:0,delay:1})
+      .to('.boxtwo', 0.2,{opacity:0,delay:0.5})
 }
 box();
