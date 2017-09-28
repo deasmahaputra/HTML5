@@ -19,9 +19,11 @@
  #txttwo{
  	opacity: 0;
     display: block;
-    position: relative;
+    position: absolute;
     width: 100px;
- 	height: 30px;
+ 	height: 25px;
+ 	margin-top: -30px;
+ 	margin-left: 140px;
  }
  .flash{
  	width: 300px;
@@ -44,7 +46,7 @@
 
  }
 
- .tulisan{
+ .text{
 	position: absolute;
 	top: 0;
  }
@@ -76,9 +78,8 @@
  }
 
  #yes{
- 	opacity: 0;
  	height: 60px;
- 	width: 80px;
+ 	width: 0px;
  	position: absolute;
  	z-index: 2;
  	margin-left: 90px;
@@ -134,9 +135,9 @@
 .box{
 	width: 0px;
 	height: 30px;
-	background-color: red;
+	background-color: #21618C;
 	position: relative;
-	margin-top: -65px;
+	margin-top: -35px;
     z-index: 1;
 
 }
@@ -144,9 +145,9 @@
 .boxtwo{
 	width: 0px;
 	height: 30px;
-	background-color: red;
+	background-color: #21618C;
 	position: absolute;
-	margin-top: -35px;
+	margin-top: -65px;
     z-index: 1;
     left:130px;
 }

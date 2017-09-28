@@ -19,12 +19,12 @@ text();
 function text1b(){
   var tl = new TimelineLite();
    tl.to('#txttwo', 2, {opacity:1})
-     .to('#txttwo', 0.2, {left:-150} ,"+=0.1")
+     .to('#txttwo', 0.2, {left:-250} ,"+=0.1")
      .to('#txtthree', 1, {opacity:1})
      .to('#txtthree', 0.5, {scale:0, rotation:-360, delay:1})
      .from('.flash', 1, {scale:0, autoAlpha:2, ease:Back.easeOut, rotation:360})
      .to('#txt03', 1, {opacity:1})
-     .to('#yes',0.5, {opacity:1})
+     .to('#yes',0.7, {width:80})
      .to('#txt03, #yes', 0.5, {rotationX:-90, transformOrigin:"50% 100%"})
      .from('#txt04', 0.5,{rotationX:90, transformOrigin:"50% 100%",opacity:1})
      .to('#txt04',0,{opacity:1})
@@ -36,9 +36,9 @@ text1b();
 //----------------------------BOX ANNIMATION-----------------------------------------------
 function box(){
   var tl = new TimelineLite();
-    tl.to('.box', 1, {width:140})
-      .to('.box', 2, {left:-150})
-      .to('.boxtwo', 0.2,{width:120})
+    tl.to('.box', 1, {width:135})
+      .to('.box', 0.5, {left:-150, delay:1})
+      .to('.boxtwo', 0.2,{width:120, delay:1})
       .to('.boxtwo', 0.2,{opacity:0,delay:1})
 }
 box();
